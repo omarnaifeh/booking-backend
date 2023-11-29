@@ -20,12 +20,12 @@ db.connect(err => {
   }
 });
 
-// Tilføj routers
+
 app.use('/user', userRouter);
 app.use('/calendar', calendarRouter);
 app.use('/booking', bookingRouter);
 
-// Start serveren
+
 app.listen(port, () => {
   console.log(`Server kører på http://localhost:${port}`);
 });
